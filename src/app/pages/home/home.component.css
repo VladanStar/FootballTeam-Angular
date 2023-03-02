@@ -1,3 +1,4 @@
+
 .banner
 {
     background-image: url('../../../assets/img/2960363.jpg');
@@ -46,16 +47,18 @@
 
 .stepBox
 {
-    background-color: #000;
+    background-color: var(--primary-color);
     padding: 20px 20px;
     border-radius: 5px;
     text-align: center;
+
 }
 .stepBox h1
 {
     font-size: 50px;
     font-weight: bold;
     color:var(--primary-color);
+    color: wheat;
 }
 .stepBox p
 {
