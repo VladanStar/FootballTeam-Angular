@@ -32,7 +32,7 @@ playersDetails = [
     playerDetails:"Main position:Left Winger Other position:Right Winger",
     playerTransferMarket:120,
     international:"Brazil",
-    playerImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xbeqlsck3p0kei53to7k"
+    playerImg:"https://img.a.transfermarkt.technology/portrait/header/371998-1664869583.jpg?lm=1"
   },
   {
     id:4,

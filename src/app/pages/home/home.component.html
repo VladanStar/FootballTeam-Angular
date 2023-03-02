@@ -40,15 +40,15 @@
     Customers <span class="highlight">Favourites Food</span>
   </h1>
   <div class="row">
-     <!-- <div class="col-lg-3 mt-3" *ngFor="let fd of foodData;index as i">
-            <div class="foodbox" *ngIf="i<=3">
-                <img src="{{fd.foodImg}}" alt="food fresh" />
-                <h1>{{fd.foodName}}</h1>
-                <p>{{fd.foodPrice | currency:'INR'}}</p>
+     <<div class="col-lg-3 mt-3" *ngFor="let pd of playerData; index as i">
+            <div class="playerbox" *ngIf="i<=3">
+                <img src="{{pd.playerImg}}" alt="food fresh" />
+                <h1>{{pd.playerName}}</h1>
+                <p>{{pd.playerPrice | currency:'INR'}}</p>
             </div>
-        </div> -->
+        </div>
   </div>
-  <a routerLink="menu" class="viewmorebtn"
+  <a routerLink="team" class="viewmorebtn"
     >view more <i class="bi bi-arrow-right"></i
   ></a>
 </div>
