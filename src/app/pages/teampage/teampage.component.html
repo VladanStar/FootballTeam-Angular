@@ -1,1 +1,36 @@
-<p>teampage works!</p>
+<div class="container mt-5 mb-5">
+
+  <div class="row">
+
+      <div class="col-lg-6" *ngIf="teamData">
+          <a routerLink="../../team" class="btn btn-sm btn-dark mb-3 ">Back</a>
+          <img src="{{teamData[0].playerImg}}" width="100%" alt="photo food"/>
+          <h1 class="mt-3">{{teamData[0].foodName}}</h1>
+          <p>{{teamData[0].playersDetails}}</p>
+          <p>{{teamData[0].playerTransferMarket | currency :'INR'}}</p>
+      </div>
+
+      <div class="col-lg-6 col-12">
+        <div class="container mt-5 mb-5">
+          <div class="row">
+            <div class="col-lg-4" *ngFor="let pd of teamData">
+              <div class="playerbox mt-3 mb-3">
+
+                <h4> Player Name: {{ pd.playerName }}</h4>
+                <p>Details: {{ pd.playerDetails }}</p>
+                <p>International: {{ pd.international }}</p>
+                <p>Transfer value: {{ pd.playerTransferMarket | currency : "INR" }}</p>
+                <br />
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+  </div>
+
+</div>
