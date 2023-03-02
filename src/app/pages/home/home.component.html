@@ -5,48 +5,35 @@
   </div>
 </div>
 <!-- step  -->
-<div class="container mt-5 mb-5">
+<div class="container mt-5 mb-5 ">
+
   <h1 class="text-center">
-   Greates Players <span class="highlight">in The World</span>
-  </h1>
-  <div class="row mt-5">
-    <!-- one  -->
-    <div class="col-lg-4 mt-2">
-      <div class="stepBox">
-        <h1>1</h1>
-        <p>Select player</p>
-      </div>
-    </div>
-    <!-- two -->
-    <div class="col-lg-4 mt-2">
-      <div class="stepBox">
-        <h1>2</h1>
-        <p>Read the details</p>
-      </div>
-    </div>
-    <!-- three  -->
-    <div class="col-lg-4 mt-2">
-      <div class="stepBox">
-        <h1>3</h1>
-        <p>Enjoy</p>
-      </div>
+    Greates Foodball Trainers <span class="highlight">in The World</span>
+   </h1>
+<div class="d-flex justify-content-center">
+  <div class="col-lg-3 mt-3 x " *ngFor="let td of trainerData; index as i">
+    <div class="playerbox ">
+      <img src="{{ td.trainerImg }}" alt="trainer" />
+      <p class="text-center">{{ td.trainerName }}</p>
     </div>
   </div>
 </div>
+</div>
+<hr>
 
 <!-- playerdbox  -->
-<div class="container mt-4 mb-4">
+<div class="container mt-4 mb-4 ">
   <h1 class="text-center">
     Supportes <span class="highlight">Favourites Players</span>
   </h1>
-  <div class="row justify-content-center">
-     <<div class="col-lg-3 mt-3 x" *ngFor="let pd of playerData; index as i">
-            <div class="playerbox "  *ngIf="i<3">
-                <img src="{{pd.playerImg}}" alt="food fresh" />
-                <h1>{{pd.playerName}}</h1>
-                <p>{{pd.playerPrice | currency:'INR'}}</p>
-            </div>
-        </div>
+  <div class="row   ">
+    <div class="col-lg-3 mt-3x d-flex justify-content-center" *ngFor="let pd of playerData; index as i">
+      <div class="playerbox" *ngIf="i <= 3">
+        <img src="{{ pd.playerImg }}" alt="player" />
+        <h1>{{ pd.playerName }}</h1>
+        <p>{{ pd.playerPrice | currency : "INR" }}</p>
+      </div>
+    </div>
   </div>
   <a routerLink="team" class="viewmorebtn"
     >view more <i class="bi bi-arrow-right"></i

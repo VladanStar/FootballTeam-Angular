@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PlayersDetailService } from 'src/app/services/players-detail.service';
+import { TrainerDetailsService } from 'src/app/services/trainer-details.service';
 
 @Component({
   selector: 'app-home',
@@ -8,9 +9,12 @@ import { PlayersDetailService } from 'src/app/services/players-detail.service';
 })
 export class HomeComponent  implements OnInit{
   playerData:any;
-constructor(private service: PlayersDetailService){}
+trainerData:any
+constructor(private service: PlayersDetailService, private trservice:TrainerDetailsService){}
 ngOnInit(): void {
-this.playerData=this.service.playersDetails
+this.playerData=this.service.playersDetails;
+this.trainerData=this.trservice.trainerDetails;
 }
 
 }
+
