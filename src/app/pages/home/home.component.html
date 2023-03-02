@@ -5,29 +5,31 @@
   </div>
 </div>
 <!-- step  -->
-<div class="container mt-5 mb-5 ">
-
+<div class="container mt-5 mb-5">
   <h1 class="text-center">
     Greates Foodball Trainers <span class="highlight">in The World</span>
-   </h1>
-<div class="d-flex justify-content-center">
-  <div class="col-lg-3 mt-3 x " *ngFor="let td of trainerData; index as i">
-    <div class="playerbox ">
-      <img src="{{ td.trainerImg }}" alt="trainer" />
-      <p class="text-center">{{ td.trainerName }}</p>
+  </h1>
+  <div class="d-flex justify-content-center">
+    <div class="col-lg-3 mt-3 x" *ngFor="let td of trainerData; index as i">
+      <div class="playerbox">
+        <img src="{{ td.trainerImg }}" alt="trainer" />
+        <p class="text-center">{{ td.trainerName }}</p>
+      </div>
     </div>
   </div>
 </div>
-</div>
-<hr>
+<hr />
 
 <!-- playerdbox  -->
-<div class="container mt-4 mb-4 ">
+<div class="container mt-4 mb-4">
   <h1 class="text-center">
     Supportes <span class="highlight">Favourites Players</span>
   </h1>
-  <div class="row   ">
-    <div class="col-lg-3 mt-3x d-flex justify-content-center" *ngFor="let pd of playerData; index as i">
+  <div class="row">
+    <div
+      class="col-lg-3 mt-3x d-flex justify-content-center"
+      *ngFor="let pd of playerData; index as i"
+    >
       <div class="playerbox" *ngIf="i <= 3">
         <img src="{{ pd.playerImg }}" alt="player" />
         <h1>{{ pd.playerName }}</h1>

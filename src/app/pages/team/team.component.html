@@ -1,1 +1,15 @@
-<p>team works!</p>
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="col-lg-4" *ngFor="let pd of playerData">
+      <div class="playerbox mt-3 mb-3">
+        <img src="{{ pd.playerImg }}" alt="player photo" />
+        <h1>{{ pd.playerName }}</h1>
+        <p>Details: {{ pd.playerDetails }}</p>
+        <p>International: {{ pd.international }}</p>
+        <p>Transfer value: {{ pd.playerTransferMarket | currency : "INR" }}</p>
+        <br />
+        <!-- <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a> -->
+      </div>
+    </div>
+  </div>
+</div>
