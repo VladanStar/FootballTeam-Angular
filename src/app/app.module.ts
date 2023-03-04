@@ -10,6 +10,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { TeamComponent } from './pages/team/team.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TeampageComponent } from './pages/teampage/teampage.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TeampageComponent } from './pages/teampage/teampage.component';
     AboutComponent,
     TeamComponent,
     ContactComponent,
-    TeampageComponent
+    TeampageComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
