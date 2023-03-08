@@ -5,7 +5,7 @@
       <div class="col-lg-6" *ngIf="teamData">
           <a routerLink="../../team" class="btn btn-sm btn-dark mb-3 ">Back</a>
           <hr><br>
-          <img src="{{teamData[0].playerImg}}" width="100%" alt="photo food"/>
+          <img src="{{teamData[0].playerImg}}"alt="photo food"/>
           <h1 class="mt-3">{{teamData[0].foodName}}</h1>
           <p>{{teamData[0].playersDetails}}</p>
           <p>{{teamData[0].playerTransferMarket | currency :'EUR'}}</p>

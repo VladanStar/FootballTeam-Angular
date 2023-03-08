@@ -1,32 +1,31 @@
-.playerbox
-{
-    padding: 10px 10px;
+.playerbox {
+  padding: 10px 10px;
+  border: 2px solid var(--primary-color);
+  height: 30rem;
+  box-shadow: 2px 2px 2px;
 }
-.playerbox img
-{
-    width: 50%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
+.playerbox img {
+  width: 50%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid red;
 }
-.playerbox h1
-{
-    font-size: 18px;
-    margin-top: 20px;
-    font-weight: bold;
+.playerbox h1 {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
 }
-.buybtn
-{
+.buybtn {
+  color: #000;
+  background-color: var(--primary-color);
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
-    color: #000;
-    background-color: var(--primary-color);
-    padding: 10px 10px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input{
-border:2px solid var(--primary-color);
+input {
+  border: 2px solid var(--primary-color);
 }
