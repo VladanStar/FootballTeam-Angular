@@ -11,8 +11,8 @@
   border-radius: 15px;
   border: 2px solid red;
 }
-.cardy{
-background-color:cornflowerblue;
+.cardy {
+  background-color:rgb(233, 113, 233);
 }
 .playerbox h1 {
   font-size: 18px;
@@ -27,11 +27,11 @@ background-color:cornflowerblue;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-position: relative;
-bottom: 4rem;
+  position: relative;
+  bottom: 4rem;
 }
 
 input {
   border: 2px solid var(--primary-color);
-margin: 20px;
+  margin: 20px;
 }
