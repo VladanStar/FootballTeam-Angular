@@ -11,6 +11,7 @@ import { TeamComponent } from './pages/team/team.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TeampageComponent } from './pages/teampage/teampage.component';
 import { FormsModule } from '@angular/forms';
+import { FansWallComponent } from './pages/fans-wall/fans-wall.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { FormsModule } from '@angular/forms';
     AboutComponent,
     TeamComponent,
     ContactComponent,
-    TeampageComponent
+    TeampageComponent,
+    FansWallComponent
   ],
   imports: [
     BrowserModule,
