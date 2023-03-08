@@ -7,6 +7,7 @@ import { PlayersDetailService } from 'src/app/services/players-detail.service';
   styleUrls: ['./team.component.css']
 })
 export class TeamComponent implements OnInit {
+searchText:any;
 playerData:any;
 constructor(private service:PlayersDetailService){}
 ngOnInit(): void {
