@@ -11,6 +11,9 @@
   border-radius: 15px;
   border: 2px solid red;
 }
+.cardy{
+background-color:cornflowerblue;
+}
 .playerbox h1 {
   font-size: 18px;
   margin-top: 20px;
@@ -18,14 +21,17 @@
 }
 .buybtn {
   color: #000;
-  background-color: var(--primary-color);
+  background-color: coral;
   padding: 10px 10px;
   text-decoration: none;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
+position: relative;
+bottom: 4rem;
 }
 
 input {
   border: 2px solid var(--primary-color);
+margin: 20px;
 }

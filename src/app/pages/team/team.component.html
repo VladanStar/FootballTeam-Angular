@@ -2,7 +2,7 @@
   <div class="row">
 
 <input type="text" name="search " [(ngModel)]="searchText" placeholder="search player">
-    <div class="col-lg-4" *ngFor="let pd of playerData |filter:searchText">
+    <div class="col-lg-4 cardy" *ngFor="let pd of playerData |filter:searchText">
       <div class="playerbox mt-3 mb-3">
         <img src="{{ pd.playerImg }}" alt="player photo" />
         <h1>{{ pd.playerName }}</h1>
@@ -10,8 +10,9 @@
         <p>International: {{ pd.international }}</p>
         <p>Transfer value: {{ pd.playerTransferMarket | currency : "EUR" }}</p>
         <br />
-        <a class="buybtn" [routerLink]="['/team',pd.id]">View More &nbsp;<i class="bi bi-binoculars"></i></a>
+
       </div>
+      <a class="buybtn" [routerLink]="['/team',pd.id]">View More &nbsp;<i class="bi bi-binoculars"></i></a>
     </div>
 
   </div>
