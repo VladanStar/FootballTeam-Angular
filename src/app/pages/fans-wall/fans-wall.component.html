@@ -1,1 +1,47 @@
-<p>fans-wall works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-6 first">
+            <form  [formGroup]="projectForm" (ngSubmit)="onSaveProject()">
+                <div class="form-group my-5">
+                <label for="name">Fans Name</label>
+                <input
+                type="text"
+                id="name"
+                formControlName="projectName"
+                class="form-control"
+                >
+                </div>
+                <hr>
+                <div class="form-group">
+                  <label for="email">Fans Email</label>
+                  <input
+                  type="email"
+                formControlName="email"
+                  id="email"
+                  class="form-control"
+                  >
+                  </div>
+                <hr>
+                <div class="form-control my-5">
+                <label for="status">Fans Status</label>
+                <select
+                id="status"
+                formControlName="projectStatus"
+                class="form-control"
+                >
+                <option value="Fans">Fans</option>
+                <option value="Supporter">Supporter</option>
+                <option value="Club Founder">Club office</option>
+                
+                </select>
+                
+                </div>
+                <button class="btn btn-primary" type="submit">Enter Text</button>
+                </form>
+        </div>
+        <div class="col-6 second">
+            {{projectForm.value | json}}
+<!-- {{addressForm.value |json}} -->
+        </div>
+    </div>
+</div>

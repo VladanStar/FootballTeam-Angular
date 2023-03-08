@@ -10,8 +10,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { TeamComponent } from './pages/team/team.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TeampageComponent } from './pages/teampage/teampage.component';
-import { FormsModule } from '@angular/forms';
 import { FansWallComponent } from './pages/fans-wall/fans-wall.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +29,8 @@ import { FansWallComponent } from './pages/fans-wall/fans-wall.component';
     BrowserModule,
     AppRoutingModule,
     Ng2SearchPipeModule,
-FormsModule
+FormsModule,
+ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
