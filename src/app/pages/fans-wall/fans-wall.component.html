@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row my-5">
         <div class="col-6 first">
-            <form  [formGroup]="projectForm" (ngSubmit)="onSaveProject()">
+            <form  [formGroup]="projectForm"  (ngSubmit)="onSaveProject()">
                 <label for="tarea">Ostavite poruku</label>
                 <div class="form-group">
                     
@@ -11,6 +11,7 @@
                       cols="55"
                       rows="6"
                       id="tarea"
+                      [(ngModel)]="uneseniTekst"
                       formControlName="content"
                       placeholder="Unesite teks"
                     ></textarea>
@@ -55,9 +56,9 @@
                 </form>
         </div>
         <div class="col-6 second">
-            {{projectForm.value | json}}
+            <!-- {{projectForm.value | json}} -->
 <!-- {{addressForm.value |json}} -->
-
+{{uneseniTekst}}
         </div>
     </div>
 </div>

@@ -9,6 +9,7 @@ import { ForbiddenNameValidator } from './custom-validators';
 })
 export class FansWallComponent  implements OnInit{
   projectForm!: FormGroup;
+  uneseniTekst:any
 
   ngOnInit(): void {
   this.projectForm = new FormGroup({
