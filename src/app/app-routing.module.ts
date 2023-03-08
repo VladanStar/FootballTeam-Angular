@@ -5,6 +5,7 @@ import { TeamComponent } from './pages/team/team.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TeampageComponent } from './pages/teampage/teampage.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,9 @@ const routes: Routes = [
 {path:'team/:id',component:TeampageComponent},
 {path:'about', component:AboutComponent},
 {path:'contact', component:ContactComponent},
+{path:"not-found", component:NotFoundComponent},
+{ path: '**', redirectTo: '/not-found' }
+
 
 ];
 

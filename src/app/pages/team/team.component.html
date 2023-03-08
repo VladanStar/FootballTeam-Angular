@@ -8,7 +8,7 @@
         <h1>{{ pd.playerName }}</h1>
         <p>Details: {{ pd.playerDetails }}</p>
         <p>International: {{ pd.international }}</p>
-        <p>Transfer value: {{ pd.playerTransferMarket | currency : "INR" }}</p>
+        <p>Transfer value: {{ pd.playerTransferMarket | currency : "EUR" }}</p>
         <br />
         <a class="buybtn" [routerLink]="['/team',pd.id]">View More &nbsp;<i class="bi bi-binoculars"></i></a>
       </div>

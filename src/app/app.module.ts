@@ -10,7 +10,11 @@ import { AboutComponent } from './pages/about/about.component';
 import { TeamComponent } from './pages/team/team.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { TeampageComponent } from './pages/teampage/teampage.component';
+<<<<<<< HEAD
 import { FormsModule } from '@angular/forms';
+=======
+import { NotFoundComponent } from './pages/not-found/not-found.component';
+>>>>>>> 9fe67e46d032551c30a09bd2ea55f4714739fc1b
 
 @NgModule({
   declarations: [
@@ -22,8 +26,12 @@ import { FormsModule } from '@angular/forms';
     TeamComponent,
     ContactComponent,
     TeampageComponent,
+<<<<<<< HEAD
 
 
+=======
+    NotFoundComponent
+>>>>>>> 9fe67e46d032551c30a09bd2ea55f4714739fc1b
   ],
   imports: [
     BrowserModule,
