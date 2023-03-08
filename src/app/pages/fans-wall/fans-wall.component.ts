@@ -10,6 +10,8 @@ import { ForbiddenNameValidator } from './custom-validators';
 export class FansWallComponent  implements OnInit{
   projectForm!: FormGroup;
   uneseniTekst:any
+  ime:string='';
+  poruka:string=""
 
   ngOnInit(): void {
   this.projectForm = new FormGroup({
@@ -21,5 +23,8 @@ export class FansWallComponent  implements OnInit{
   }
   onSaveProject(){
   console.log(this.projectForm.value)
+  this.ime += this.projectForm.value.projectName;
+  this.poruka += this.projectForm.value.content;
+
   }
 }
