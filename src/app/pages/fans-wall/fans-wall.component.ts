@@ -14,7 +14,8 @@ export class FansWallComponent  implements OnInit{
   this.projectForm = new FormGroup({
   'projectName':new FormControl(null, [Validators.required, ForbiddenNameValidator(/Test/)]),
   'email': new FormControl(null, [Validators.required, Validators.email]),
-  'projectStatus':new FormControl('Fans')
+  'projectStatus':new FormControl('Fans'),
+  'content':new FormControl('write text',[ Validators.required, Validators.maxLength(250)])
   });
   }
   onSaveProject(){
