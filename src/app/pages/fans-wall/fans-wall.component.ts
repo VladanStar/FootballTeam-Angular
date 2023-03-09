@@ -28,6 +28,7 @@ export class FansWallComponent  implements OnInit{
   });
   }
   onSaveProject(){
+
   console.log(this.projectForm.value)
   this.ime = this.projectForm.value.projectName;
   this.poruka = this.projectForm.value.content;
