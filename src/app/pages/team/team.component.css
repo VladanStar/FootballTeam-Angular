@@ -1,12 +1,12 @@
 .playerbox {
-  padding: 10px 10px;
+  padding: 5px 5px;
   border: 2px solid var(--primary-color);
-  height: 30rem;
+  height: 20rem;
   box-shadow: 2px 2px 2px;
 }
 .playerbox img {
-  width: 50%;
-  height: 200px;
+  width: 20%;
+  height: 100px;
   object-fit: cover;
   border-radius: 15px;
   border: 2px solid red;
@@ -22,16 +22,16 @@
 .buybtn {
   color: #000;
   background-color: coral;
-  padding: 10px 10px;
+  padding: 7px 7px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   border-radius: 5px;
   cursor: pointer;
   position: relative;
-  bottom: 4rem;
+  bottom: 3rem;
 }
 
 input {
   border: 2px solid var(--primary-color);
-  margin: 20px;
+  margin: 15px;
 }
