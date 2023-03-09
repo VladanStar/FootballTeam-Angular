@@ -35,5 +35,6 @@ export class FansWallComponent  implements OnInit{
   this.empList.unshift({ profil: this.ime, message: this.poruka });
   this.profil = "";
   this.message = "";
+this.projectForm.reset();
   }
 }
