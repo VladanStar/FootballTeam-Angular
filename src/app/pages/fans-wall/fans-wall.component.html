@@ -4,7 +4,7 @@
             <form  [formGroup]="projectForm"  (ngSubmit)="onSaveProject()">
                 <label for="tarea">Ostavite poruku</label>
                 <div class="form-group">
-                    
+
                     <textarea
                       type="text"
                       class="textarea text-center my-2"
@@ -48,9 +48,9 @@
                 <option value="Fans">Fans</option>
                 <option value="Supporter">Supporter</option>
                 <option value="Club Founder">Club office</option>
-                
+
                 </select>
-                
+
                 </div>
                 <button class="btn btn-primary" type="submit">Enter Text</button>
                 </form>
@@ -58,8 +58,18 @@
         <div class="col-6 second">
             <!-- {{projectForm.value | json}} -->
 <!-- {{addressForm.value |json}} -->
-{{poruka}} <br>
-{{ime}}
+<div class="">
+<div class=""> Masage: {{poruka}} </div>
+<br>
+
+<div>
+  User: {{ime}}
+</div>
+
+
+
+</div>
+
         </div>
     </div>
 </div>
