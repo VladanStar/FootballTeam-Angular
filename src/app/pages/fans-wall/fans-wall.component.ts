@@ -15,6 +15,7 @@ export class FansWallComponent  implements OnInit{
   profil:string="";
     message :string="";
     empList: Array<{profil: string, message: string}> = [];
+session:any;
 
 
   messageArray:Array<{user:string,message:string}> = [];
@@ -34,7 +35,7 @@ export class FansWallComponent  implements OnInit{
   this.poruka = this.projectForm.value.content;
   console.log(this.profil,this.message);
   this.empList.unshift({ profil: this.ime, message: this.poruka });
-
+localStorage.setItem('session',JSON.stringify(this.ime))
 this.projectForm.reset();
   }
 }
