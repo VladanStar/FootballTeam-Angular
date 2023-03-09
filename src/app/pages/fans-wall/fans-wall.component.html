@@ -59,14 +59,18 @@
             <!-- {{projectForm.value | json}} -->
 <!-- {{addressForm.value |json}} -->
 <div class="">
-<div class=""> Masage: {{poruka}} </div>
+<div class="text-center"> Masage: {{poruka}} </div>
 <br>
 
-<div>
+<div class="text-center">
   User: {{ime}}
+
+ <!-- {{clone}} -->
 </div>
-
-
+<!-- <div *ngFor="let m of clone">
+<p>{{m.MessageArray.user}}</p>
+<p>{{m.MessageArray.message}}</p>
+</div> -->
 
 </div>
 <hr>
