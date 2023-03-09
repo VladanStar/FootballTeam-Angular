@@ -60,7 +60,7 @@
 <!-- {{addressForm.value |json}} -->
 <div >
 <div class="border border-info">
-  <p>Last Message:</p>
+  <p>Latest Message:</p>
 <div class="text-center"> Masage: {{poruka}} </div>
 <br>
 
@@ -75,8 +75,9 @@
 <hr>
 <div *ngFor="let m of empList let i = index">
 <div  *ngIf="i <= 5">
-<p>{{m.profil}}</p>
-<p>{{m.message}}</p>
+  <p class="mess"> {{m.message}}</p>
+<p class="user">  <em> {{m.profil}}</em></p>
+
 <hr>
 </div>
 </div>
