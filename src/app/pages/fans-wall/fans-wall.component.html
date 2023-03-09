@@ -58,18 +58,25 @@
         <div class="col-6 second">
             <!-- {{projectForm.value | json}} -->
 <!-- {{addressForm.value |json}} -->
-<div class="">
+<div >
+<div class="border border-info">
+  <p>Last Message:</p>
 <div class="text-center"> Masage: {{poruka}} </div>
 <br>
 
 <div class="text-center">
+
   User: {{ime}}
 
  <!-- {{clone}} -->
 </div>
+
+</div>
+<hr>
 <div *ngFor="let m of empList">
 <p>{{m.profil}}</p>
 <p>{{m.message}}</p>
+<hr>
 </div>
 
 </div>
