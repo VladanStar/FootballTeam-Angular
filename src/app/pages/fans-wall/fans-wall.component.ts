@@ -12,6 +12,9 @@ export class FansWallComponent  implements OnInit{
   uneseniTekst:any;
   ime:string='';
   poruka:string="";
+  profil:string="";
+    message :string="";
+    empList: Array<{profil: string, message: string}> = [];
 
 
   messageArray:Array<{user:string,message:string}> = [];
@@ -28,6 +31,9 @@ export class FansWallComponent  implements OnInit{
   console.log(this.projectForm.value)
   this.ime = this.projectForm.value.projectName;
   this.poruka = this.projectForm.value.content;
-
+  console.log(this.profil,this.message);
+  this.empList.push({ profil: this.ime, message: this.poruka });
+  this.profil = "";
+  this.message = "";
   }
 }
