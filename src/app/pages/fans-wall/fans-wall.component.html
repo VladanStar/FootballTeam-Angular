@@ -73,10 +73,12 @@
 
 </div>
 <hr>
-<div *ngFor="let m of empList">
+<div *ngFor="let m of empList let i = index">
+<div  *ngIf="i <= 5">
 <p>{{m.profil}}</p>
 <p>{{m.message}}</p>
 <hr>
+</div>
 </div>
 
 </div>

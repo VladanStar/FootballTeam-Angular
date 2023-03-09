@@ -32,7 +32,7 @@ export class FansWallComponent  implements OnInit{
   this.ime = this.projectForm.value.projectName;
   this.poruka = this.projectForm.value.content;
   console.log(this.profil,this.message);
-  this.empList.push({ profil: this.ime, message: this.poruka });
+  this.empList.unshift({ profil: this.ime, message: this.poruka });
   this.profil = "";
   this.message = "";
   }
