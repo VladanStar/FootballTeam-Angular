@@ -9,7 +9,7 @@ import { ForbiddenNameValidator } from './custom-validators';
 })
 export class FansWallComponent  implements OnInit{
   projectForm!: FormGroup;
-
+  uneseniTekst:any;
   ime:string='';
   poruka:string="";
   profil:string="";
@@ -28,7 +28,6 @@ session:any;
   'content':new FormControl('write text',[ Validators.required, Validators.maxLength(250)])
   });
   }
-
   onSaveProject(){
 
   console.log(this.projectForm.value)
@@ -36,7 +35,6 @@ session:any;
   this.poruka = this.projectForm.value.content;
   console.log(this.profil,this.message);
   this.empList.unshift({ profil: this.ime, message: this.poruka });
-localStorage.setItem('session',JSON.stringify(this.ime))
 this.projectForm.reset();
   }
 }
