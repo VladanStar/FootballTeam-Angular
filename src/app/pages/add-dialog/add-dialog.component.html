@@ -1,62 +1,54 @@
 <div class="container">
-<div class="row">
-<div class="col-9">
-  <form [formGroup]="playerForm" (ngSubmit)="addPlayer()">
-    <div class="form-group my-2">
-      <label for="name">Player Name</label>
-      <input
-        type="text"
-        id="name"
+  <div class="row">
+    <div class="col-9">
+      <form [formGroup]="playerForm" (ngSubmit)="addPlayer()">
+        <div class="form-group my-2">
+          <label for="name">Player Name</label>
+          <input
+            type="text"
+            id="name"
+            formControlName="playerName"
+            class="form-control"
+          />
+        </div>
+        <label for="tarea">Details</label>
+        <div class="form-group">
+          <textarea
+            type="text"
+            class="textarea text-center my-2"
+            cols="55"
+            rows="6"
+            id="tarea"
+            formControlName="content"
+            placeholder="Unesite tekst"
+          ></textarea>
+        </div>
 
-        formControlName="playerName"
-        class="form-control"
-      />
+        <div class="form-group my-2">
+          <label for="name">International</label>
+          <input
+            type="text"
+            title="#"
+            id="international"
+            formControlName="international"
+            class="form-control"
+          />
+        </div>
+        <hr />
+        <div class="form-group">
+          <label for="number">Transfer value</label>
+          <input
+            type="email"
+            title="#"
+            formControlName="transfer"
+            id="transfer"
+            class="form-control"
+          />
+        </div>
+        <hr />
+
+        <button class="btn btn-primary" type="submit">Add Player</button>
+      </form>
     </div>
-    <label for="tarea">Details</label>
-    <div class="form-group">
-      <textarea
-        type="text"
-        class="textarea text-center my-2"
-        cols="55"
-        rows="6"
-        id="tarea"
-
-        formControlName="content"
-        placeholder="Unesite tekst"
-      ></textarea>
-    </div>
-
-    <div class="form-group my-2">
-      <label for="name">International</label>
-      <input
-        type="text"
-title="#"
-        id="international"
-        formControlName="international"
-        class="form-control"
-      />
-    </div>
-    <hr />
-    <div class="form-group">
-      <label for="number">Transfer value</label>
-      <input
-        type="email"
-title="#"
-        formControlName="transfer"
-        id="transfer"
-        class="form-control"
-      />
-    </div>
-    <hr />
-
-    <button class="btn btn-primary" type="submit">Add Player</button>
-  </form>
+  </div>
 </div>
-</div>
-<div class="col-3">
-<p>Added Player</p>
-  <p>{{playerForm.value.playerName}}</p>
-</div>
-
-</div>
-

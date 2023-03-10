@@ -2,7 +2,7 @@
   <div class="row my-5">
     <div class="col-6 first">
       <form [formGroup]="projectForm" (ngSubmit)="onSaveProject()">
-        <label for="tarea">Ostavite poruku</label>
+        <label for="tarea">Write message</label>
         <div class="form-group">
           <textarea
             type="text"
@@ -47,12 +47,12 @@
             <option value="Club Founder">Club office</option>
           </select>
         </div>
-        <button class="btn btn-primary" type="submit">Enter Text</button>
+        <button class="btn btn-primary" type="submit">Send Text</button>
       </form>
     </div>
     <div class="col-6 second">
       <div>
-        <p>Latest Massage:</p>
+        <p>Latest Message:</p>
         <div class="border border-info py-2">
           <p class="mess">{{ poruka }}</p>
           <p class="user">{{ ime }}</p>
