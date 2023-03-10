@@ -15,7 +15,7 @@ export class FansWallComponent  implements OnInit{
   profil:string="";
     message :string="";
     empList: Array<{profil: string, message: string}> = [];
-session:any;
+
 
 
   messageArray:Array<{user:string,message:string}> = [];
