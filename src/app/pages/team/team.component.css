@@ -3,6 +3,7 @@
   border: 2px solid var(--primary-color);
   height: 20rem;
   box-shadow: 2px 2px 2px;
+  position: relative;
 }
 .playerbox img {
   width: 20%;
@@ -13,6 +14,7 @@
 }
 .cardy {
   background-color:#f0a8f0;
+
 }
 .playerbox h1 {
   font-size: 18px;
@@ -34,4 +36,10 @@
 input {
   border: 2px solid var(--primary-color);
   margin: 15px;
+}
+.delete-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* apply any additional styles */
 }
