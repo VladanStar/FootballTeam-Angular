@@ -13,7 +13,9 @@ export class AddDialogComponent implements OnInit {
   playerData: any;
   ime: any = '';
   details: any;
+int:any="";
   playerName: string = '';
+money:any=''
   poruka: string = '';
   text: string = '';
   transfer: number = 0;
@@ -26,7 +28,7 @@ export class AddDialogComponent implements OnInit {
     text: string;
     trans: number;
   }> = [];
-  player: any = { playerName: this.playerName, int: 'Serbian' };
+  player: any = {};
   ngOnInit(): void {
     this.playerData = this.service.playersDetails;
     this.playerForm = new FormGroup({
@@ -43,7 +45,9 @@ export class AddDialogComponent implements OnInit {
     console.log(this.playerForm.value);
     this.ime = this.playerForm.value.playerName;
     this.details = this.playerForm.value.content;
-    this.player = { playerName: this.ime, playerDetails: this.details };
+this.money=this.playerForm.value.transfer;
+this.int=this.playerForm.value.international;
+    this.player = { playerName: this.ime, playerDetails:this.details, international:this.int, playerTransferMarket:this.money,playerImg:'https://oks.org.rs/wp-content/uploads/2019/12/Icons-Ekipni_sportovi_letnje_OI-fudbal-220x220.png'};
     this.playerData = this.playerData.push(this.player);
 
     console.log(this.ime);

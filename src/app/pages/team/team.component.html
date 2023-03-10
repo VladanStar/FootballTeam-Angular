@@ -11,7 +11,7 @@
         <p>International: {{ pd.international }}</p>
         <p>Transfer value: {{ pd.playerTransferMarket | currency : "EUR" }}</p>
         <br />
-        <button class="delete-button " (click)="deleteItem(i)"><i class="bi bi-x-circle-fill"></i>Del</button>
+        <a class="delete-button " (click)="deleteItem(i)"><i class="bi bi-x-circle-fill"></i></a>
 
       </div>
 

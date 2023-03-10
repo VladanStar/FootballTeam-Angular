@@ -5,11 +5,11 @@
   box-shadow: 2px 2px 2px;
   position: relative;
   font-size: 14px;
-  
+
 }
 .playerbox img {
   width: 20%;
-  height: 70px;
+  height: 90px;
   object-fit: cover;
   border-radius: 15px;
   border: 2px solid red;

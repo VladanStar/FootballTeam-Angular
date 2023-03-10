@@ -1,11 +1,13 @@
 <div class="container">
 <div class="row">
+<div class="col-9">
   <form [formGroup]="playerForm" (ngSubmit)="addPlayer()">
     <div class="form-group my-2">
       <label for="name">Player Name</label>
       <input
         type="text"
         id="name"
+[(ngModel)]="playerName"
         formControlName="playerName"
         class="form-control"
       />
@@ -51,3 +53,10 @@ title="#"
   </form>
 </div>
 </div>
+<div class="col-3">
+<p>Added Player</p>
+  <p>{{playerName}}</p>
+</div>
+
+</div>
+
