@@ -10,7 +10,7 @@
         <p>International: {{ pd.international }}</p>
         <p>Transfer value: {{ pd.playerTransferMarket | currency : "EUR" }}</p>
         <br />
-        <button class="delete-button " (click)="deleteItem(i)"><i class="bi bi-file-x-fill"></i></button>
+        <button class="delete-button " (click)="deleteItem(i)"><i class="bi bi-x-circle-fill"></i></button>
       </div>
     
       <a class="buybtn" [routerLink]="['/team',pd.id]">View More &nbsp;<i class="bi bi-binoculars"></i></a>

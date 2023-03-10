@@ -1,13 +1,15 @@
 .playerbox {
   padding: 5px 5px;
   border: 2px solid var(--primary-color);
-  height: 20rem;
+  height: 18rem;
   box-shadow: 2px 2px 2px;
   position: relative;
+  font-size: 14px;
+  
 }
 .playerbox img {
   width: 20%;
-  height: 100px;
+  height: 70px;
   object-fit: cover;
   border-radius: 15px;
   border: 2px solid red;
@@ -18,7 +20,7 @@
 }
 .playerbox h1 {
   font-size: 18px;
-  margin-top: 20px;
+  margin-top: 10px;
   font-weight: bold;
 }
 .buybtn {
