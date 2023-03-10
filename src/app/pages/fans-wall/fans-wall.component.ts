@@ -14,10 +14,10 @@ export class FansWallComponent implements OnInit {
   poruka: string = '';
   profil: string = '';
   message: string = '';
-  status:string="";
-  empList: Array<{ profil: string, message: string, status:string }> = [];
+  status: string = '';
+  empList: Array<{ profil:string; message:string; status:string }> = [];
 
-  messageArray: Array<{ user: string; message: string }> = [];
+  messageArray: Array<{ user:string; message:string }> = [];
 
   ngOnInit(): void {
     this.projectForm = new FormGroup({
@@ -37,9 +37,13 @@ export class FansWallComponent implements OnInit {
     console.log(this.projectForm.value);
     this.ime = this.projectForm.value.projectName;
     this.poruka = this.projectForm.value.content;
-    this.status = this.projectForm.value.projectStatus
+    this.status = this.projectForm.value.projectStatus;
     console.log(this.profil, this.message);
-    this.empList.unshift({ profil: this.ime, message: this.poruka, status:this.status });
+    this.empList.unshift({
+      profil: this.ime,
+      message: this.poruka,
+      status: this.status,
+    });
     this.projectForm.reset();
   }
 }
