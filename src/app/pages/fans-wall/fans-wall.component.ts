@@ -25,7 +25,7 @@ export class FansWallComponent implements OnInit {
         ForbiddenNameValidator(/Test/),
       ]),
       email: new FormControl(null, [Validators.required, Validators.email]),
-      projectStatus: new FormControl('Fans'),
+      projectStatus: new FormControl('Fans', Validators.required),
       content: new FormControl('write text', [
         Validators.required,
         Validators.maxLength(250),
