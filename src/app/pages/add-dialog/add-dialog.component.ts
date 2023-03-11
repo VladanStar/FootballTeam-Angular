@@ -33,7 +33,7 @@ export class AddDialogComponent implements OnInit {
 
   ngOnInit(): void {
     this.playerData = this.service.playersDetails;
-    
+
     this.playerForm = new FormGroup({
       playerName: new FormControl(null, [Validators.required]),
       international: new FormControl(null, [Validators.required]),
@@ -43,6 +43,8 @@ export class AddDialogComponent implements OnInit {
         Validators.maxLength(150),
       ]),
     });
+
+
   }
   addPlayer() {
     console.log(this.playerForm.value);
@@ -63,4 +65,20 @@ export class AddDialogComponent implements OnInit {
     console.log(this.playerData);
     this.playerForm.reset();
   }
+  public get playerN(){
+    return this.playerForm.get('name');
+
+    }
+    public get interN(){
+      return this.playerForm.get('international');
+
+      }
+      public get contentN(){
+        return this.playerForm.get('content');
+
+        }
+        public get transferN(){
+          return this.playerForm.get('transfer');
+
+          }
 }
