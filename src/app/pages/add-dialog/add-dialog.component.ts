@@ -14,7 +14,7 @@ export class AddDialogComponent implements OnInit {
   ime: any = '';
   details: any;
   int: any = '';
-  playerName: string = '';
+   playerName: string = '';
   money: any = '';
   poruka: string = '';
   text: string = '';
@@ -65,20 +65,20 @@ export class AddDialogComponent implements OnInit {
     console.log(this.playerData);
     this.playerForm.reset();
   }
-  public get playerN(){
-    return this.playerForm.get('name');
+  // public get playerN(){
+  //   return this.playerForm.get('playerName');
 
-    }
-    public get interN(){
-      return this.playerForm.get('international');
+  //   }
+  //   public get interN(){
+  //     return this.playerForm.get('international');
 
-      }
-      public get contentN(){
-        return this.playerForm.get('content');
+  //     }
+  //     public get contentN(){
+  //       return this.playerForm.get('content');
 
-        }
-        public get transferN(){
-          return this.playerForm.get('transfer');
+  //       }
+  //       public get transferN(){
+  //         return this.playerForm.get('transfer');
 
-          }
+  //         }
 }
