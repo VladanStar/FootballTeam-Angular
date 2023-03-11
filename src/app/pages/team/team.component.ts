@@ -14,7 +14,7 @@ constructor(private service:PlayersDetailService){}
 ngOnInit(): void {
   this.playerData=this.service.playersDetails;
 }
-deleteItem(i:any){
+deleteItem(i:number){
 console.log(i);
 this.playerData.splice(i,1)
 console.log(this.playerData)
