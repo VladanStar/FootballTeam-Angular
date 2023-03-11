@@ -49,7 +49,6 @@ this.money=this.playerForm.value.transfer;
 this.int=this.playerForm.value.international;
     this.player = { playerName: this.ime, playerDetails:this.details, international:this.int, playerTransferMarket:this.money,playerImg:'https://oks.org.rs/wp-content/uploads/2019/12/Icons-Ekipni_sportovi_letnje_OI-fudbal-220x220.png'};
     this.playerData = this.playerData.push(this.player);
-
     console.log(this.ime);
     console.log(this.playerData);
     this.playerForm.reset();
