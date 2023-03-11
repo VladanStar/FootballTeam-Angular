@@ -47,7 +47,7 @@
         </div>
         <hr />
 
-        <button class="btn btn-primary" type="submit">Add Player</button>
+        <button class="btn btn-primary" type="submit" [disabled]= '!playerForm.valid'>Add Player</button>
       </form>
     </div>
 
