@@ -20,7 +20,7 @@ if(this.getTeamId){
   this.teamData =  this.service.playersDetails.filter((value)=>{
     return value.id == this.getTeamId;
   });
-  console.log(this.teamData,'teamdata>>');
+  console.log(this.teamData,'teamdata');
 }
 }
 
