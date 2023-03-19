@@ -9,7 +9,7 @@
     <!-- <button class="add-button" routerLink="add" ><i class="bi bi-person-fill-add">ADD</i></button> -->
     <div
       class="col-lg-4 cardy"
-      *ngFor="let pd of playerData | filter : searchText; let i = index"
+      *ngFor="let pd of playerData | filter : searchText |  paginate: { itemsPerPage: 6, currentPage: page, totalItems: totalLength };let i = index"
     >
       <div class="playerbox mt-3 mb-3">
         <img src="{{ pd.playerImg }}" alt="player photo" />
@@ -19,13 +19,8 @@
         <p>
           Transfer value:
           {{
-            pd.playerTransferMarket
-              | paginate
-                : {
-                    itemsPerPage: 4,
-                    currentPage: page,
-                    totalItems: totalLength
-                  }
+            pd.playerTransferMarket | currency:"EUR"
+
           }}
         </p>
 
