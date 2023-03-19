@@ -13,6 +13,7 @@ import { TeampageComponent } from './pages/teampage/teampage.component';
 import { FansWallComponent } from './pages/fans-wall/fans-wall.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddDialogComponent } from './pages/add-dialog/add-dialog.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { AddDialogComponent } from './pages/add-dialog/add-dialog.component';
     BrowserModule,
     AppRoutingModule,
     Ng2SearchPipeModule,
+NgxPaginationModule,
 FormsModule,
 ReactiveFormsModule
   ],

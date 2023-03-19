@@ -1,26 +1,47 @@
 <div class="container mt-5 mb-5">
   <div class="row">
-
-<input type="text" name="search " [(ngModel)]="searchText" placeholder="search player">
-<!-- <button class="add-button" routerLink="add" ><i class="bi bi-person-fill-add">ADD</i></button> -->
-    <div class="col-lg-4 cardy" *ngFor="let pd of playerData |filter:searchText; let i = index">
+    <input
+      type="text"
+      name="search "
+      [(ngModel)]="searchText"
+      placeholder="search player"
+    />
+    <!-- <button class="add-button" routerLink="add" ><i class="bi bi-person-fill-add">ADD</i></button> -->
+    <div
+      class="col-lg-4 cardy"
+      *ngFor="let pd of playerData | filter : searchText; let i = index"
+    >
       <div class="playerbox mt-3 mb-3">
         <img src="{{ pd.playerImg }}" alt="player photo" />
         <h1>{{ pd.playerName }}</h1>
         <p>Details: {{ pd.playerDetails }}</p>
         <p>International: {{ pd.international }}</p>
-        <p>Transfer value: {{ pd.playerTransferMarket | currency : "EUR" }}</p>
-        <br />
-        <a class="delete-button " (click)="deleteItem(i)"><i class="bi bi-x-circle-fill"></i></a>
+        <p>
+          Transfer value:
+          {{
+            pd.playerTransferMarket
+              | paginate
+                : {
+                    itemsPerPage: 4,
+                    currentPage: page,
+                    totalItems: totalLength
+                  }
+          }}
+        </p>
 
+        <br />
+        <a class="delete-button" (click)="deleteItem(i)"
+          ><i class="bi bi-x-circle-fill"></i
+        ></a>
       </div>
 
-      <a class="buybtn" [routerLink]="['/team',pd.id]">View More &nbsp;<i class="bi bi-binoculars"></i></a>
-       <!-- <div>
+      <a class="buybtn" [routerLink]="['/team', pd.id]"
+        >View More &nbsp;<i class="bi bi-binoculars"></i
+      ></a>
+      <!-- <div>
 
   </div> -->
     </div>
-
-
+    <pagination-controls (pageChange)="page = $event"></pagination-controls>
   </div>
 </div>
