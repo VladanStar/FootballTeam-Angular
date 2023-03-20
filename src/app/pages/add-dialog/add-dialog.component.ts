@@ -63,6 +63,7 @@ export class AddDialogComponent implements OnInit {
     this.playerData = this.playerData.push(this.player);
     console.log(this.ime);
     console.log(this.playerData);
+    window.alert('Uspesno ste dodali igraca')
     this.playerForm.reset();
   }
   // public get playerN(){
